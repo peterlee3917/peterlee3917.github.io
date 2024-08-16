@@ -482,12 +482,12 @@ main {
 
 body.dark .header {
   background-image: linear-gradient(#0000008b, #000000e6),
-    url("assets/images/hero-bg.webp");
+    url("assets/images/thom-milkovic-skUTVJi8-jc-unsplash.jpg");
 }
 
 body.light .header {
   background-image: linear-gradient(#ffffffa2, #ffffffe6),
-    url("assets/images/hero-bg-light.webp");
+    url("assets/images/alexey-komissarov-1MnkSfwtxRI-unsplash.jpg");
 }
 
 .header-textbox {
@@ -993,13 +993,40 @@ body.dark .work-links img {
 /* ----- Contact -----*/
 /* --------------------------------- */
 
+
 .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: var(--gutter-x-large);
+  border: 1px solid var(--border);
+  border-radius: var(--gutter-nano);
+  padding: var(--gutter-large);
+}
+
+.contact-content .btn-cta {
+  display: inline-block;
+  padding: var(--gutter-small) var(--gutter-large);
+  font-size: var(--text-medium);
+  text-align: center;
+  color: white;
+  background-color: var(--important); /* Adjust to your preferred button color */
+  border-radius: var(--gutter-small);
+  text-decoration: none;
+}
+
+.contact-content .btn-cta:hover {
+  background-color: darken(var(--important), 10%); /* Slightly darker on hover */
+}
+
+/* .contact-content {
   display: grid;
   grid-template-columns: minmax(245px, 35%) 1fr;
   margin-block: var(--gutter-x-large);
   border: 1px solid var(--border);
   border-radius: var(--gutter-nano);
-}
+} */
 
 @media (max-width: 1032px) {
   .contact-content {
