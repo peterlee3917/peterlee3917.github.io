@@ -1253,3 +1253,12 @@ input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
 }
+
+.contact-content {
+  text-align: center; /* Center the content inside the container */
+  margin-top: 20px;   /* Optional: Add some space above the button */
+}
+
+.btn-cta {
+  display: inline-block; /* Ensure the button does not span the full width */
+}
